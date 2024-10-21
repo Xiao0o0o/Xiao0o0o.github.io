@@ -18,3 +18,11 @@ Research Interests
 
 - Trustworthy Graph Neural Networks
 - Graph-Based Applications
+
+Master Thesis: The Effectiveness of GNNs for Node Classification: The Significance of Side Information
+======
+This thesis studies the effectiveness of Graph Neural Networks (GNNs) for node classification. We conduct systematic experiments on several representative deep-learning models for graph data, using training data generated from the Stochastic Block Model (SBM) and the theoretical results on the fundamental limits of this model as guidance in the design of our experiments.
+![Can not find the image](images/experiment2.png)
+
+We observe that GNN-based methods fail to exploit the information from labeled nodes in semi-supervised learning settings.  We propose an effective data augmentation method to enhance GNN-based methods by making better use of labeled information in the training data.  Our experiments using synthetic data from SBMs and real-world datasets demonstrate that our method can significantly enhance the capabilities of GNN models and notably improve their performance for node classification. 
+
