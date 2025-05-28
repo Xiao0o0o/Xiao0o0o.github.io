@@ -6,12 +6,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="hero">
+  <header class="header">
+    <div class="logo-container">
+      <a href="https://kdd2025.kdd.org/call-for-lecture-style-tutorials/" target="_blank">
+        <img src="KDD25-Logo3.png" alt="KDD 2025 Logo" class="logo">
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#materials">Tutorial Materials</a></li>
+        <li><a href="#contributors">Contributors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+  <!-- <div class="hero"> -->
     <div class="hero-text">
-      <h1>Uncertainty Quantification and Confidence Calibration in Large<br>Language Models</h1>
+      <h1>Uncertainty Quantification and Confidence Calibration <br> in Large Language Models</h1>
       <p>2025 KDD Lecture-style Tutorial</p>
       <p>Sunday, August 3 &nbsp; 8:00 AM – 11:00 AM</p>
-      <p>Location: TBD</p>
+      <p>Location: MTCC</p>
     </div>
   </div>
 
@@ -25,30 +42,30 @@
     </p>
   </section>
 
-  <section class="schedule">
+  <section class="schedule", id="schedule">
     <h2>Schedule</h2>
     <ul>
       <li><strong>Section 1: Introduction and Overview (10 min)</strong><br>
-        - The rise of LLMs<br>
-        - Importance of reliability in LLMs, especially in high-stakes domains<br>
-        - Need for Uncertainty Quantification and Confidence Calibration
+        - LLMs and their growth<br>
+        - Reliability concerns in sensitive applications<br>
+        - Why we need Uncertainty Quantification and Confidence Calibration
       </li>
-      <li><strong>Section 2: Define and understand LLM Uncertainty and Confidence</strong><br>
-        - Traditional UQ<br>
+      <li><strong>Section 2: Define and understand LLM Uncertainty and Confidence (15 min)</strong><br>
+        - Traditional UQ methods<br>
         - Aleatoric & Epistemic Uncertainty<br>
-        - From traditional to LLM: insufficiency of categories alone<br>
+        - Limitations of traditional categories for LLMs<br>
         - Uncertainty vs. Confidence
       </li>
-      <li><strong>Section 3: UQ Methods (90 min)</strong><br>
+      <li><strong>Section 3: UQ Methodsc in LLMs (90 min)</strong><br>
         - Input uncertainty methods<br>
         - Reasoning uncertainty methods<br>
         - Parameter uncertainty methods<br>
         - Prediction uncertainty methods<br>
-        <em>(Break - 10 min)</em>
+        <br><em>(Break - 10 min)</em><br>
       </li>
       <li><strong>Section 4: Confidence (20 min)</strong><br>
         - Confidence Estimation and Calibration<br>
-        - LLM Calibration methods
+        - Calibration methods in LLMs<br>
       </li>
       <li><strong>Section 5: Applications (15 min)</strong><br>
         - Robotics<br>
@@ -67,16 +84,16 @@
     </ul>
   </section>
 
-  <section class="materials">
-    <h2>Materials</h2>
+  <section class="materials", id="materials">
+    <h2>Tutorial Materials</h2>
     <ul>
-      <li><a href="slides.pdf" download>Download Slides (PDF)</a></li>
+      <li><a href="slides.pdf" download>Download Slides (TBD)</a></li>
       <li><a href="survey.pdf" download>Download Survey Paper (PDF)</a></li>
     </ul>
   </section>
 
-  <section class="speakers">
-    <h2>Speakers</h2>
+  <section class="speakers",id="contributors">
+    <h2>Contributors</h2>
     <div class="speaker-grid">
       <div class="speaker">
         <img src="people/xiaoou.png" alt="Xiaoou Liu">
@@ -91,6 +108,10 @@
         <p><strong>Longchao Da</strong><br>Affiliation and short bio.</p>
       </div>
       <div class="speaker">
+        <img src="people/" alt="Speaker 6">
+        <p><strong>Zhen Lin</strong><br>Affiliation and short bio.</p>
+      </div>
+      <div class="speaker">
         <img src="people/chacha.jpg" alt="Chacha Chen">
         <p><strong>Chacha Chen</strong><br>Affiliation and short bio.</p>
       </div>
@@ -98,10 +119,6 @@
         <img src="people/hua.png" alt="Hua Wei">
         <p><strong>Hua Wei</strong><br>Affiliation and short bio.</p>
       </div>
-      <!-- <div class="speaker">
-        <img src="people/" alt="Speaker 6">
-        <p><strong>Name 6</strong><br>Affiliation and short bio.</p>
-      </div> -->
     </div>
   </section>
 </body>
