@@ -26,4 +26,4 @@ This thesis studies the effectiveness of Graph Neural Networks (GNNs) for node c
 
 We observe that GNN-based methods fail to exploit the information from labeled nodes in semi-supervised learning settings.  We propose an effective data augmentation method to enhance GNN-based methods by making better use of labeled information in the training data.  Our experiments using synthetic data from SBMs and real-world datasets demonstrate that our method can significantly enhance the capabilities of GNN models and notably improve their performance for node classification. 
 
-![Can not find the image](../_pages/semi-supervised_k%3D2.png)
+![Can not find the image](../images/semi-supervised_k%3D2.png)
