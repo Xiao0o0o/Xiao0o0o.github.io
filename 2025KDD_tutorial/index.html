@@ -4,21 +4,83 @@
   <meta charset="UTF-8">
   <title>Tutorial: Uncertainty Quantification and Confidence Calibration in LLMs</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+    }
+    .header .logo img {
+      height: 50px;
+    }
+    .navbar a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    .navbar a:hover, .navbar a:focus {
+      background-color: #e0e0e0;
+    }
+    .hero {
+      margin-top: 80px;
+      padding: 40px 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    .abstract, .schedule, .materials, .speakers {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .speaker-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .speaker {
+      flex: 1 1 200px;
+      max-width: 200px;
+      text-align: center;
+    }
+    .speaker img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
-    <div class="logo-container">
-      <a href="https://kdd2025.kdd.org/call-for-lecture-style-tutorials/" target="_blank">
-        <img src="KDD25-Logo3.png" alt="KDD 2025 Logo" class="logo">
+    <div class="logo">
+      <a href="https://kdd2025.kdd.org/call-for-lecture-style-tutorials/">
+        <img src="KDD25-Logo3.png" alt="KDD Logo">
       </a>
     </div>
     <nav class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#materials">Tutorial Materials</a></li>
-        <li><a href="#contributors">Contributors</a></li>
-      </ul>
+      <a href="#home">Home</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#materials">Tutorial Materials</a>
+      <a href="#speakers">Contributors</a>
     </nav>
   </header>
 
