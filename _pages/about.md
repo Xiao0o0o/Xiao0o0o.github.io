@@ -9,21 +9,42 @@ redirect_from:
 ---
 
 
-Hello everyone! I am a first-year Ph.D. student in Computer Science at Arizona State University (ASU), working under the supervision of Professor [Hua Wei](https://www.public.asu.edu/~hwei27/index.html). Previously, I obtained my Bachelor's degree from Beijing Jiaotong University and my Master's degree in Computer Science from the University of British Columbia (UBC), Okanagan Campus, under the guidance of Professor [Yong Gao](https://cmps-people.ok.ubc.ca/yongg/).
+Hello! I am a second-year Ph.D. student in Computer Science at Arizona State University (ASU), working under the supervision of Professor [Hua Wei](https://www.public.asu.edu/~hwei27/index.html). Previously, I obtained my Bachelor's degree from Beijing Jiaotong University and my Master's degree in Computer Science from the University of British Columbia (UBC), Okanagan Campus, under the guidance of Professor [Yong Gao](https://cmps-people.ok.ubc.ca/yongg/).
 
-I am still in the process of exploring my research direction. My current interests lie in the Trustworthy Graph Neural Networks and various graph-based applications. If you have similar research interests, I’d be happy to connect and discuss ideas!
-
-Research Interests
+## Research Interests
 ======
 
-- Trustworthy Graph Neural Networks
-- Graph-Based Applications
+My research focuses on trustworthy AI with an emphasis on uncertainty quantification, explainability, and graph-based learning.
 
-Master Thesis: The Effectiveness of GNNs for Node Classification: The Significance of Side Information
+- Uncertainty Quantification in Large Language Models (LLMs): Studying and evaluating different UQ methods in LLMs, with a current focus on analyzing uncertainty in reasoning processes through graph-based representations.
+
+- Explainability in Graph Neural Networks (GNNs): Designing methods to assess and improve the reliability of GNN explanations.
+
+## Publications
 ======
-This thesis studies the effectiveness of Graph Neural Networks (GNNs) for node classification. We conduct systematic experiments on several representative deep-learning models for graph data, using training data generated from the Stochastic Block Model (SBM) and the theoretical results on the fundamental limits of this model as guidance in the design of our experiments.
-![Can not find the image](../images/experiment2.png)
 
-We observe that GNN-based methods fail to exploit the information from labeled nodes in semi-supervised learning settings.  We propose an effective data augmentation method to enhance GNN-based methods by making better use of labeled information in the training data.  Our experiments using synthetic data from SBMs and real-world datasets demonstrate that our method can significantly enhance the capabilities of GNN models and notably improve their performance for node classification. 
+(\*Equal contribution)
+### Conference Papers
 
-![Can not find the image](../images/semi-supervised_k%3D2.png)
+1. J. Zhang\*, **Xiaoou Liu\***, D. Luo, H. Wei. "Is Your Explanation Reliable: Confidence-Aware Explanation on Graph Neural Networks." *Proceedings of the 2025 KDD Conference*, 2025.
+2. L. Da, **Xiaoou Liu**, J. Dai, L. Cheng, Y. Wang, H. Wei. "Understanding the Uncertainty of LLM Explanations: A Perspective Based on Reasoning Topology." *The 2nd Conference on Language Modeling (COLM)*, 2025.
+3. T. Bao, **Xiaoou Liu**, M. Ma, T.T. Johnson, H. Wei. "Uncertainty Quantification for Physics-Informed Traffic Graph Networks." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems*, 2025. **🏆 Best Artifact Award**
+4. Y. Zhang, K. Vo, L. Da, T. Chen, **Xiaoou Liu**, H. Wei. "Reproducible and Low-cost Sim-to-Real Environment for Traffic Signal Control." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems*, 2025.
+5. X. Liu, Y. Zhang, Y. Lu, C. Yin, X. Hu, **Xiaoou Liu**, L. Chen, S. Wang, A. Rodriguez, et al. "Biomedical Foundation Model: A Survey." *arXiv preprint arXiv:2503.02104*, 2025.
+6. X. Liu, **Xiaoou Liu**, S. Du, J. Cheng. "Hear You Say You: An Efficient Framework for Marine Mammal Sounds' Classification." *Proceedings of the AAAI Conference on Artificial Intelligence*, vol. 38(20), pp. 22250–22257, 2024.
+
+### Tutorials
+
+1. **Xiaoou Liu\***, T. Chen\*, L. Da, C. Chen, Z. Lin, H. Wei. "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey." *Proceedings of the 2025 KDD Tutorial*, 2025.
+
+### Preprints & Under Review
+
+1. **Xiaoou Liu**, Z. Lin, L. Da, C. Chen, S. Trivedi, H. Wei. "MCQA-Eval: Efficient Confidence Evaluation in NLG with Gold-Standard Correctness Labels." *arXiv preprint arXiv:2502.14268*, 2025. 
+
+2. T. Chen, **Xiaoou Liu**, L. Da, J. Chen, V. Papalexakis, H. Wei. "Uncertainty Quantification of Large Language Models through Multi-Dimensional Responses." *arXiv preprint arXiv:2502.16820*, 2025.
+
+### Thesis
+
+1. **Xiaoou Liu**. "The Effectiveness of GNNs for Node Classification: The Significance of Side Information." *University of British Columbia*, Master's thesis, 2024.
+
+2. **Xiaoou Liu**. "Pedestrian Distracted Behavior Detection Based on Pose Estimation and Target Detection." *Beijing Jiaotong University*, Bachelor's thesis, 2020.
