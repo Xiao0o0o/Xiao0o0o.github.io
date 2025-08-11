@@ -12,7 +12,6 @@ redirect_from:
 Hello! I am a second-year Ph.D. student in Computer Science at Arizona State University (ASU), working under the supervision of Professor [Hua Wei](https://www.public.asu.edu/~hwei27/index.html). Previously, I obtained my Bachelor's degree from Beijing Jiaotong University and my Master's degree in Computer Science from the University of British Columbia (UBC), Okanagan Campus, under the guidance of Professor [Yong Gao](https://cmps-people.ok.ubc.ca/yongg/).
 
 ## Research Interests
-======
 
 My research focuses on trustworthy AI with an emphasis on uncertainty quantification, explainability, and graph-based learning.
 
@@ -21,7 +20,6 @@ My research focuses on trustworthy AI with an emphasis on uncertainty quantifica
 - Explainability in Graph Neural Networks (GNNs): Designing methods to assess and improve the reliability of GNN explanations.
 
 ## Publications
-======
 
 (\*Equal contribution)
 ### Conference Papers
