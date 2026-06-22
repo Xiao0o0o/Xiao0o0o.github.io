@@ -24,7 +24,7 @@ My research focuses on trustworthy AI with an emphasis on uncertainty quantifica
 (\*Equal contribution)
 ### Conference Papers
 
-1. **Xiaoou Liu\***, T. Chen\*, L. Da, Y. Wang, H. Wei. "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective." *Proceedings of the 2026 KDD Conference (Blue Sky Track)*, 2026. [\[Blog\]](/blogs/sim-to-real-foundation-model-agents/)
+1. **Xiaoou Liu\***, T. Chen\*, W. Li, X. Hu, H. Wei. "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective." *Proceedings of the 2026 KDD Conference (Blue Sky Track)*, 2026. [\[Blog\]](/blogs/sim-to-real-foundation-model-agents/)
 2. **Xiaoou Liu**, T. Chen, D. Zhang, Y. Wang, L. Cheng, H. Wei. "Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution." *Proceedings of the 43rd International Conference on Machine Learning (ICML)*, 2026. [\[Blog\]](/blogs/stepwise-confidence-attribution/)
 3. J. Zhang\*, **Xiaoou Liu\***, D. Luo, H. Wei. "Is Your Explanation Reliable: Confidence-Aware Explanation on Graph Neural Networks." *Proceedings of the 2025 KDD Conference*, 2025.
 4. L. Da, **Xiaoou Liu**, J. Dai, L. Cheng, Y. Wang, H. Wei. "Understanding the Uncertainty of LLM Explanations: A Perspective Based on Reasoning Topology." *The 2nd Conference on Language Modeling (COLM)*, 2025.
