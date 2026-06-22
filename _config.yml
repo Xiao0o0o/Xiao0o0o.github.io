@@ -25,14 +25,14 @@ author:
   name             : #"Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
-  location         : "BENG 4th Floor, Tempe, AZ"
+  location         : "BENG 5th Floor, Tempe, AZ"
   employer         : "Arizona State University"
-  uri              : "https://www.asu.edu/" # URL
+  uri              : #"https://www.asu.edu/" # URL
   email            : "xiaoouli@asu.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=8nDIsz8AAAAJ"
   impactstory      : # URL
   orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/ellen-xiaoou-liu-40a71a1b9/" # Username
+  linkedin         : # "https://www.linkedin.com/in/ellen-xiaoou-liu-40a71a1b9/" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
