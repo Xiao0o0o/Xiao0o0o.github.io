@@ -10,7 +10,7 @@ author_profile: true
 ### 2026
 
 - [The Sim-to-Real Gap of Foundation Model Agents](https://xiao0o0o.github.io/blogs/sim-to-real-foundation-model-agents)  
-  *KDD'26 Blue Sky* · Xiaoou Liu\*, Tiejin Chen\*, Longchao Da, Yaqing Wang, Hua Wei
+  *KDD'26 Blue Sky* · Xiaoou Liu\*, Tiejin Chen\*, Weibo Li, Xiyang Hu, Hua Wei
 
 - [Diagnosing Multi-step Reasoning Failures via Stepwise Confidence Attribution](https://xiao0o0o.github.io/blogs/stepwise-confidence-attribution)  
   *ICML'26* · Xiaoou Liu, Tiejin Chen, Dengjia Zhang, Yaqing Wang, Lu Cheng, Hua Wei
