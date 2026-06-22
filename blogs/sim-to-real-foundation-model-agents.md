@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-**Xiaoou Liu\*, Tiejin Chen\*, Longchao Da, Yaqing Wang, Hua Wei**  
+**Xiaoou Liu\*, Tiejin Chen\*, Weibo Li, Xiyang Hu, Hua Wei**  
 *KDD'26 Blue Sky Track*  
 [\[Paper\]](https://arxiv.org/abs/2606.07017)
 
