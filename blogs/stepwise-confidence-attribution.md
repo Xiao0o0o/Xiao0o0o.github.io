@@ -1,11 +1,10 @@
 ---
 layout: single
 permalink: /blogs/stepwise-confidence-attribution/
-title: "Diagnosing Multi-step Reasoning Failures via Stepwise Confidence Attribution"
+title: "Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution"
 author_profile: true
 ---
 
-# Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution
 
 **Xiaoou Liu, Tiejin Chen, Dengjia Zhang, Yaqing Wang, Lu Cheng, Hua Wei**  
 *ICML'26*  

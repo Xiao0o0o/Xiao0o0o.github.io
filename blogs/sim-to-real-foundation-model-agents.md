@@ -1,11 +1,10 @@
 ---
 layout: single
 permalink: /blogs/sim-to-real-foundation-model-agents/
-title: "The Sim-to-Real Gap of Foundation Model Agents"
+title: "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective"
 author_profile: true
 ---
 
-# The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective
 
 **Xiaoou Liu\*, Tiejin Chen\*, Longchao Da, Yaqing Wang, Hua Wei**  
 *KDD'26 Blue Sky Track*  

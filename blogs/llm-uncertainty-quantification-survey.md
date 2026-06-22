@@ -1,11 +1,10 @@
 ---
 layout: single
 permalink: /blogs/llm-uncertainty-quantification-survey/
-title: "UQ & Confidence Calibration in LLMs: A Survey"
+title: "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey"
 author_profile: true
 ---
 
-# Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey
 
 **Xiaoou Liu\*, Tiejin Chen\*, Longchao Da, Chacha Chen, Zhen Lin, Hua Wei**  
 *KDD'25 Survey Track*  
