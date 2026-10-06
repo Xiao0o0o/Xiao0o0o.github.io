@@ -1,0 +1,10 @@
+<div class="news-scroll" tabindex="0" aria-label="News (scrollable)">
+  <ul class="news-list">
+    {% for item in site.data.news %}
+    <li>
+      <time>[{{ item.date }}]</time>
+      <div class="news-text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

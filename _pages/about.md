@@ -1,50 +1,41 @@
 ---
+layout: prism
 permalink: /
-title: "About Me"
-excerpt: "About Me"
-author_profile: true
-redirect_from: 
+title: "About"
+profile: true
+redirect_from:
   - /about/
   - /about.html
 ---
 
+<section class="section bio" markdown="1">
 
-Hello! I am a second-year Ph.D. student in Computer Science at Arizona State University (ASU), working under the supervision of Professor [Hua Wei](https://www.public.asu.edu/~hwei27/index.html). Previously, I obtained my Bachelor's degree from Beijing Jiaotong University and my Master's degree in Computer Science from the University of British Columbia (UBC), Okanagan Campus, under the guidance of Professor [Yong Gao](https://cmps-people.ok.ubc.ca/yongg/).
+## About Me
 
-## Research Interests
+I am a third-year Ph.D. student in Computer Science at [Arizona State University](https://scai.engineering.asu.edu/), advised by [Prof. Hua Wei](https://www.public.asu.edu/~hwei27/index.html). Before ASU, I received my M.Sc. in Computer Science from the [University of British Columbia](https://ok.ubc.ca/) under the guidance of [Prof. Yong Gao](https://cmps-people.ok.ubc.ca/yongg/), and my B.Eng. in Computer Science from Beijing Jiaotong University.
 
-My research focuses on trustworthy AI with an emphasis on uncertainty quantification, explainability, and graph-based learning.
+My research aims to make large language models and LLM agents **reliable enough for the real world**:
 
-- Uncertainty Quantification in Large Language Models (LLMs): Studying and evaluating different UQ methods in LLMs, with a current focus on analyzing uncertainty in reasoning processes through graph-based representations.
+- **Uncertainty quantification in LLMs**: estimating how confident a model should be in its outputs and reasoning steps, and using these estimates to improve reasoning performance and reliability.
+- **Learning and adaptation in LLM agents**: building agents that keep learning from interaction, acquire and refine reusable skills, and coordinate well in multi-agent systems.
 
-- Explainability in Graph Neural Networks (GNNs): Designing methods to assess and improve the reliability of GNN explanations.
+<p class="callout">I am available for research internships in <strong>Winter 2027</strong> and <strong>Summer 2027</strong>. Feel free to reach out!</p>
 
-## Publications
+</section>
 
-(\*Equal contribution)
-### Conference Papers
+<section class="section">
+  <h2>News</h2>
+  {% include prism/news.html %}
+</section>
 
-1. **Xiaoou Liu\***, T. Chen\*, W. Li, X. Hu, H. Wei. "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective." *Proceedings of the 2026 KDD Conference (Blue Sky Track)*, 2026. [\[Blog\]](/blogs/sim-to-real-foundation-model-agents/)
-2. **Xiaoou Liu**, T. Chen, D. Zhang, Y. Wang, L. Cheng, H. Wei. "Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution." *Proceedings of the 43rd International Conference on Machine Learning (ICML)*, 2026. [\[Blog\]](/blogs/stepwise-confidence-attribution/)
-3. J. Zhang\*, **Xiaoou Liu\***, D. Luo, H. Wei. "Is Your Explanation Reliable: Confidence-Aware Explanation on Graph Neural Networks." *Proceedings of the 2025 KDD Conference*, 2025.
-4. L. Da, **Xiaoou Liu**, J. Dai, L. Cheng, Y. Wang, H. Wei. "Understanding the Uncertainty of LLM Explanations: A Perspective Based on Reasoning Topology." *The 2nd Conference on Language Modeling (COLM)*, 2025.
-5. T. Bao, **Xiaoou Liu**, M. Ma, T.T. Johnson, H. Wei. "Uncertainty Quantification for Physics-Informed Traffic Graph Networks." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems*, 2025. **🏆 Best Artifact Award**
-6. Y. Zhang, K. Vo, L. Da, T. Chen, **Xiaoou Liu**, H. Wei. "Reproducible and Low-cost Sim-to-Real Environment for Traffic Signal Control." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems*, 2025.
-7. X. Liu, Y. Zhang, Y. Lu, C. Yin, X. Hu, **Xiaoou Liu**, L. Chen, S. Wang, A. Rodriguez, et al. "Biomedical Foundation Model: A Survey." *arXiv preprint arXiv:2503.02104*, 2025.
-8. X. Liu, **Xiaoou Liu**, S. Du, J. Cheng. "Hear You Say You: An Efficient Framework for Marine Mammal Sounds' Classification." *Proceedings of the AAAI Conference on Artificial Intelligence*, vol. 38(20), pp. 22250–22257, 2024.
-
-### Tutorials
-
-1. **Xiaoou Liu\***, T. Chen\*, L. Da, C. Chen, Z. Lin, H. Wei. "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey." *Proceedings of the 2025 KDD Tutorial*, 2025. [\[Blog\]](/blogs/llm-uncertainty-quantification-survey/)
-
-### Preprints & Under Review
-
-1. **Xiaoou Liu**, Z. Lin, L. Da, C. Chen, S. Trivedi, H. Wei. "MCQA-Eval: Efficient Confidence Evaluation in NLG with Gold-Standard Correctness Labels." *arXiv preprint arXiv:2502.14268*, 2025. 
-
-2. T. Chen, **Xiaoou Liu**, L. Da, J. Chen, V. Papalexakis, H. Wei. "Uncertainty Quantification of Large Language Models through Multi-Dimensional Responses." *arXiv preprint arXiv:2502.16820*, 2025.
-
-### Thesis
-
-1. **Xiaoou Liu**. "The Effectiveness of GNNs for Node Classification: The Significance of Side Information." *University of British Columbia*, Master's thesis, 2024.
-
-2. **Xiaoou Liu**. "Pedestrian Distracted Behavior Detection Based on Pose Estimation and Target Detection." *Beijing Jiaotong University*, Bachelor's thesis, 2020.
+<section class="section">
+  <div class="section-head">
+    <h2>Selected Publications</h2>
+    <a href="{{ site.baseurl }}/publications/">View all →</a>
+  </div>
+  <div class="pub-list">
+    {% for pub in site.data.publications %}{% if pub.selected %}
+      {% include prism/pub-card.html pub=pub hide_venue_full=true %}
+    {% endif %}{% endfor %}
+  </div>
+</section>

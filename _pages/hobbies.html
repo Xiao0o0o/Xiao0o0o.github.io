@@ -1,0 +1,68 @@
+---
+layout: prism
+title: "Hobbies"
+permalink: /hobbies/
+lightbox: true
+wide: true
+---
+
+{% comment %}
+  Photos are picked up automatically. Put them in one sub-folder per album:
+    images/hobbies/hiking/   images/hobbies/animals/   (add more folders any time)
+  The filename becomes the caption: "south-mountain-sunset.jpg" -> "South mountain sunset".
+  Tip: resize photos to ~1600px on the long side before adding them.
+{% endcomment %}
+{% assign photos = site.static_files | where_exp: "f", "f.path contains '/images/hobbies/'" %}
+{% assign photo_count = 0 %}
+{% assign albums = "" %}
+{% for f in photos %}
+  {% assign ext = f.extname | downcase %}
+  {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" or ext == ".gif" %}
+    {% assign photo_count = photo_count | plus: 1 %}
+    {% assign album = f.path | remove_first: "/images/hobbies/" | split: "/" | first %}
+    {% unless albums contains album %}{% assign albums = albums | append: album | append: "," %}{% endunless %}
+  {% endif %}
+{% endfor %}
+{% assign album_list = albums | split: "," %}
+
+<p>When I'm not working on LLMs, you'll most likely find me on a hiking trail, or getting distracted by every animal I meet. Here are some of my favorite shots.</p>
+
+{% if photo_count > 0 %}
+  {% if album_list.size > 1 %}
+  <div class="gallery-filters" role="group" aria-label="Filter photos">
+    <button class="filter-btn active" type="button" data-album="all">All</button>
+    {% for a in album_list %}<button class="filter-btn" type="button" data-album="{{ a }}">{{ a | replace: "-", " " | capitalize }}</button>{% endfor %}
+  </div>
+  {% endif %}
+  <div class="gallery">
+    {% for f in photos %}
+      {% assign ext = f.extname | downcase %}
+      {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" or ext == ".gif" %}
+        {% assign album = f.path | remove_first: "/images/hobbies/" | split: "/" | first %}
+        {% assign caption = f.basename | replace: "-", " " | replace: "_", " " | capitalize %}
+        <a class="gallery-item" href="{{ site.baseurl }}{{ f.path }}" data-lightbox data-album="{{ album }}" data-caption="{{ caption }}">
+          <img src="{{ site.baseurl }}{{ f.path }}" alt="{{ caption }}" loading="lazy">
+          <span class="cap">{{ caption }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.gallery-filters .filter-btn');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.classList.toggle('active', x === b); });
+          var a = b.getAttribute('data-album');
+          document.querySelectorAll('.gallery-item').forEach(function (it) {
+            it.hidden = a !== 'all' && it.getAttribute('data-album') !== a;
+          });
+        });
+      });
+    })();
+  </script>
+{% else %}
+  <div class="gallery-empty">
+    <p><strong>Photos coming soon!</strong></p>
+  </div>
+{% endif %}

@@ -28,7 +28,13 @@ author:
   location         : "BENG 5th Floor, Tempe, AZ"
   employer         : "Arizona State University"
   uri              : #"https://www.asu.edu/" # URL
-  email            : "xiaoouli@asu.edu" 
+  email            : "xiaoouli@asu.edu"
+  role             : "PhD Student"
+  interests        : # shown in the homepage sidebar
+    - "Uncertainty Quantification in LLMs"
+    - "Reliable LLM Reasoning"
+    - "LLM Agents & Multi-Agent Systems"
+    - "Continual Learning & Skill Acquisition"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

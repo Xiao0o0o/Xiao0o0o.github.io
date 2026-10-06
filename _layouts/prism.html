@@ -1,0 +1,111 @@
+<!doctype html>
+{% assign base = site.baseurl | default: "" %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/" %}{% assign page_title = site.title %}{% else %}{% assign page_title = page.title | append: " · " | append: site.title %}{% endif %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="author" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/avatar.jpg' | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="{{ base }}/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="{{ base }}/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="{{ base }}/assets/css/prism.css?v={{ site.time | date: '%s' }}">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  {% if page.math %}
+  <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="{{ base }}/">{{ site.title }}</a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        {% for link in site.data.navigation.main %}
+          {% assign link_url = link.url | prepend: base %}
+          {% if link.url == "/" %}
+            {% if page.url == "/" %}{% assign active = true %}{% else %}{% assign active = false %}{% endif %}
+          {% else %}
+            {% if page.url contains link.url %}{% assign active = true %}{% else %}{% assign active = false %}{% endif %}
+          {% endif %}
+          <a href="{{ link_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn nav-menu-btn" id="nav-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page-wrap{% if page.profile %} has-profile{% endif %}">
+    {% if page.profile %}
+      <aside class="profile-col">
+        {% include prism/profile.html %}
+      </aside>
+      <div class="content-col">
+        {{ content }}
+      </div>
+    {% else %}
+      <div class="content-col {% if page.wide %}wide{% else %}narrow{% endif %}">
+        {% unless page.hide_title %}
+          <header class="page-header">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
+          </header>
+        {% endunless %}
+        <div class="prose">
+          {{ content }}
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Last updated: {{ site.time | date: "%B %-d, %Y" }}</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      document.getElementById('theme-toggle').addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+      var btn = document.getElementById('nav-menu-btn');
+      var links = document.getElementById('nav-links');
+      btn.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+  {% if page.lightbox %}{% include prism/lightbox.html %}{% endif %}
+</body>
+</html>

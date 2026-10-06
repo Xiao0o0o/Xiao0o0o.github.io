@@ -1,0 +1,36 @@
+{% assign base = site.baseurl | default: "" %}
+{% assign pub = include.pub %}
+{% assign main_url = pub.links.paper | default: pub.links.blog | default: pub.links.project %}
+{% if main_url and main_url contains "://" %}{% assign main_ext = true %}{% else %}{% assign main_ext = false %}{% if main_url %}{% assign main_url = main_url | prepend: base %}{% endif %}{% endif %}
+{% assign authors = pub.authors | replace: "Xiaoou Liu", '<span class="me">Xiaoou Liu</span>' %}
+<article class="pub-card{% if main_url %} is-linked{% endif %}">
+  <div class="pub-thumb">
+    {% if pub.thumbnail %}
+      <img src="{{ base }}/images/papers/{{ pub.thumbnail }}" alt="" loading="lazy">
+    {% else %}
+      <div class="pub-thumb-placeholder"><span>{{ pub.venue }}</span></div>
+    {% endif %}
+  </div>
+  <div class="pub-body">
+    <div class="pub-badges">
+      <span class="badge badge-venue">{{ pub.venue }}</span>
+      {% if pub.award %}<span class="badge badge-award">🏆 {{ pub.award }}</span>{% endif %}
+      {% if pub.note %}<span class="badge badge-note">{{ pub.note }}</span>{% endif %}
+    </div>
+    <h3 class="pub-title">
+      {% if main_url %}<a class="stretched" href="{{ main_url }}"{% if main_ext %} target="_blank" rel="noopener"{% endif %}>{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+    </h3>
+    <p class="pub-authors">{{ authors }}</p>
+    {% unless include.hide_venue_full %}<p class="pub-venue">{{ pub.venue_full }}</p>{% endunless %}
+    {% assign has_links = false %}{% for l in pub.links %}{% assign has_links = true %}{% endfor %}
+    {% if has_links %}
+    <div class="pub-links">
+      {% for l in pub.links %}
+        {% assign url = l[1] %}
+        {% if url contains "://" %}{% assign ext = true %}{% else %}{% assign ext = false %}{% assign url = url | prepend: base %}{% endif %}
+        <a class="chip" href="{{ url }}"{% if ext %} target="_blank" rel="noopener"{% endif %}>{{ l[0] | capitalize }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

@@ -1,8 +1,11 @@
 ---
-layout: single
+layout: prism
 permalink: /blogs/sim-to-real-foundation-model-agents/
 title: "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective"
-author_profile: true
+order: 3
+venue: "KDD'26 Blue Sky"
+authors: "Xiaoou Liu*, Tiejin Chen*, Weibo Li, Xiyang Hu, Hua Wei"
+summary: "Why agents that shine on benchmarks stumble in deployment: a unified MDP view of four channels behind the sim-to-real gap, and the remedies for each."
 ---
 
 

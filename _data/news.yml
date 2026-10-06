@@ -1,0 +1,45 @@
+# Homepage news, newest first. "text" supports Markdown (**bold**, *italic*, [links](...)).
+# Style: first-author papers -> A paper: "[Title](link)" is accepted to VENUE'YY!
+#        other papers        -> Two papers are accepted to VENUE'YY!
+
+- date: 2026-09
+  text: 'A paper: "[AndroidReality: How Far Are Mobile Agents from the Real World?](https://arxiv.org/abs/2608.07775)" is accepted to **NeurIPS''26 Datasets & Benchmarks Track**!'
+
+- date: 2026-09
+  text: 'Two papers: "Diverse Reasoning Paths Matter: Symbolic Equivalence Augmentation for Enhancing RL Exploration" and "Detect Before You Disambiguate: Perturbation-Based Input Ambiguity Detection in LLMs" are accepted to **AACL''26 Main**!'
+
+- date: 2026-08
+  text: "Two papers are accepted to **EMNLP'26**!"
+
+- date: 2026-06
+  text: 'A paper: "[PlantShade: Predicting Plant Shadows for Lighting-Aware Robotic Agricultural Operation](https://arxiv.org/abs/2609.21059)" is accepted to **IROS''26**! Grateful for the IEEE RAS Travel Support.'
+
+- date: 2026-05
+  text: "Started my Research Scientist Internship at **TikTok**."
+
+- date: 2026-05
+  text: 'Two papers are accepted to **ICML''26**, including "[Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution](https://arxiv.org/abs/2605.19228)".'
+
+- date: 2026-05
+  text: 'A paper: "[The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective](https://arxiv.org/abs/2606.07017)" is accepted to **KDD''26 Blue Sky Track**!'
+
+- date: 2026-04
+  text: "A paper is accepted to **ACL'26 Findings**!"
+
+- date: 2026-01
+  text: "Two papers are accepted to **PAKDD'26 (Oral)** and **EACL'26 Findings**!"
+
+- date: 2025-11
+  text: 'Our tutorial: "[Uncertainty Quantification and Confidence Calibration in LLMs](https://darl-genai.github.io/ICDM-UQ-LLM-Tutorial/)" was presented at **ICDM''25** in Washington, DC, US.'
+
+- date: 2025-08
+  text: 'Our tutorial: "[Uncertainty Quantification and Confidence Calibration in LLMs](/2025KDD_tutorial/)" was presented at **KDD''25** in Toronto, Canada.'
+
+- date: 2025-07
+  text: "A paper is accepted to **COLM'25**!"
+
+- date: 2025-05
+  text: "Our paper received the **Best Artifact Award** at **ICCPS'25**! 🏆"
+
+- date: 2025-05
+  text: 'Two papers: "[Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey](https://arxiv.org/abs/2503.15850)" and "[Is Your Explanation Reliable: Confidence-Aware Explanation on Graph Neural Networks](https://arxiv.org/abs/2506.00437)" are accepted to **KDD''25**!'

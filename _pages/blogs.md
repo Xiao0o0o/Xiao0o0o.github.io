@@ -1,21 +1,21 @@
 ---
-layout: single
+layout: prism
 permalink: /blogs/
 title: "Blogs"
-author_profile: true
+subtitle: "Accessible write-ups of my research papers."
 ---
 
-## Research Blogs
-
-### 2026
-
-- [The Sim-to-Real Gap of Foundation Model Agents](https://xiao0o0o.github.io/blogs/sim-to-real-foundation-model-agents)  
-  *KDD'26 Blue Sky* · Xiaoou Liu\*, Tiejin Chen\*, Weibo Li, Xiyang Hu, Hua Wei
-
-- [Diagnosing Multi-step Reasoning Failures via Stepwise Confidence Attribution](https://xiao0o0o.github.io/blogs/stepwise-confidence-attribution)  
-  *ICML'26* · Xiaoou Liu, Tiejin Chen, Dengjia Zhang, Yaqing Wang, Lu Cheng, Hua Wei
-
-### 2025
-
-- [Uncertainty Quantification & Confidence Calibration in LLMs: A Survey](https://xiao0o0o.github.io/blogs/llm-uncertainty-quantification-survey)  
-  *KDD'25 Survey* · Xiaoou Liu\*, Tiejin Chen\*, Longchao Da, Chacha Chen, Zhen Lin, Hua Wei
+{% comment %}
+  Lists every page under /blogs/. To add a post, create blogs/<slug>.md with
+  layout: prism, permalink, title, order (higher = newer), venue, authors, summary.
+{% endcomment %}
+{% assign posts = site.pages | where_exp: "p", "p.url contains '/blogs/'" | where_exp: "p", "p.url != '/blogs/'" | sort: "order" | reverse %}
+<div class="blog-list">
+  {% for p in posts %}
+  <a class="blog-item" href="{{ site.baseurl }}{{ p.url }}">
+    <div class="blog-meta"><span class="badge badge-venue">{{ p.venue }}</span><span>{{ p.authors }}</span></div>
+    <h3>{{ p.title }}</h3>
+    {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+  </a>
+  {% endfor %}
+</div>

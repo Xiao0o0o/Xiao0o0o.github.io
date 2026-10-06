@@ -1,8 +1,11 @@
 ---
-layout: single
+layout: prism
 permalink: /blogs/stepwise-confidence-attribution/
 title: "Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution"
-author_profile: true
+order: 2
+venue: "ICML'26"
+authors: "Xiaoou Liu, Tiejin Chen, Dengjia Zhang, Yaqing Wang, Lu Cheng, Hua Wei"
+summary: "Stepwise Confidence Attribution (SCA) assigns confidence to each reasoning step from text alone, flagging the steps where a black-box LLM likely went wrong."
 ---
 
 

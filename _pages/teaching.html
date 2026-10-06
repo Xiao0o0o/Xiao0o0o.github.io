@@ -1,12 +1,25 @@
 ---
-layout: archive
+layout: prism
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% comment %}
+  Add courses to _data/teaching.yml, for example:
+  - course: "CSE 475: Foundations of Machine Learning"
+    role: "Teaching Assistant"
+    term: "Fall 2025"
+    school: "Arizona State University"
+    description: "Held weekly office hours and graded assignments."
+{% endcomment %}
+{% if site.data.teaching and site.data.teaching.size > 0 %}
+  {% for t in site.data.teaching %}
+  <div class="info-card">
+    <h3>{{ t.course }}</h3>
+    <p class="meta">{{ t.role }} · {{ t.school }} · {{ t.term }}</p>
+    {% if t.description %}<p>{{ t.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+{% else %}
+  <p class="gallery-empty">Teaching experience coming soon.</p>
+{% endif %}

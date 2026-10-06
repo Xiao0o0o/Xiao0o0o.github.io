@@ -1,0 +1,213 @@
+# All publications, newest first. Used by the homepage (selected: true),
+# the Publications page, and the CV page.
+#
+# Fields:
+#   title, authors, venue (short badge, e.g. "ICML 2026"), venue_full, year
+#   type: conference | preprint | thesis
+#   selected: true      -> also shown under "Selected Publications" on the homepage
+#   thumbnail: file in /images/papers/ (leave empty for a placeholder tile)
+#   award / note: highlighted badges, e.g. "Best Artifact Award", "Oral"
+#   links: paper / code / blog / project / slides (any subset)
+#   "Xiaoou Liu" is highlighted automatically; add * for equal contribution.
+
+- title: "AndroidReality: How Far Are Mobile Agents from the Real World?"
+  authors: "Xiaoou Liu*, L. Da, H. Chen, Y. Ling, H. Wei"
+  venue: "NeurIPS 2026 D&B"
+  venue_full: "Conference on Neural Information Processing Systems, Datasets & Benchmarks Track"
+  year: 2026
+  type: conference
+  selected: true
+  thumbnail: androidreality.jpg
+  links:
+    paper: https://arxiv.org/abs/2608.07775
+
+- title: "Diverse Reasoning Paths Matter: Symbolic Equivalence Augmentation for Enhancing RL Exploration"
+  authors: "Xiaoou Liu, T. Chen, H. Chen, Y. Ling, H. Wei"
+  venue: "AACL 2026"
+  venue_full: "Conference of the Asia-Pacific Chapter of the ACL (Main)"
+  year: 2026
+  type: conference
+  selected: true
+  thumbnail: symbolic.jpg
+  links: {}
+
+- title: "Detect Before You Disambiguate: Perturbation-Based Input Ambiguity Detection in LLMs"
+  authors: "Xiaoou Liu*, T. Chen*, A. Moradipari, M. Clifford, K. Han, Y. Chen, N. Ammar, H. Wei"
+  venue: "AACL 2026"
+  venue_full: "Conference of the Asia-Pacific Chapter of the ACL (Main)"
+  year: 2026
+  type: conference
+  selected: false
+  thumbnail:
+  links: {}
+
+- title: "PlantShade: Predicting Plant Shadows for Lighting-Aware Robotic Agricultural Operation"
+  authors: "Xiaoou Liu*, L. Da*, X. Li*, L. Xiang, H. Wei"
+  venue: "IROS 2026"
+  venue_full: "IEEE/RSJ International Conference on Intelligent Robots and Systems"
+  year: 2026
+  type: conference
+  selected: false
+  thumbnail: plantshade.jpg
+  links:
+    paper: https://arxiv.org/abs/2609.21059
+
+- title: "LangMARL: Natural Language Multi-Agent Reinforcement Learning"
+  authors: "H. Yao, L. Da, Xiaoou Liu, C. Fleming, T. Chen, H. Wei"
+  venue: "EMNLP 2026"
+  venue_full: "Conference on Empirical Methods in Natural Language Processing (Main)"
+  year: 2026
+  type: conference
+  thumbnail: langmarl.jpg
+  links:
+    paper: https://arxiv.org/abs/2604.00722
+
+- title: "MASkills: Continual Skills Optimization for Multi-Agent LLM Systems"
+  authors: "H. Yao, Xiaoou Liu, C. Fleming, T. Chen, H. Wei"
+  venue: "EMNLP 2026 Findings"
+  venue_full: "Findings of the Conference on Empirical Methods in Natural Language Processing"
+  year: 2026
+  type: conference
+  thumbnail: maskills.jpg
+  links:
+    paper: https://arxiv.org/abs/2609.02094
+
+- title: "Diagnosing Multi-step Reasoning Failures in Black-box LLMs via Stepwise Confidence Attribution"
+  authors: "Xiaoou Liu, T. Chen, D. Jia, Y. Qing, L. Cheng, H. Wei"
+  venue: "ICML 2026"
+  venue_full: "International Conference on Machine Learning"
+  year: 2026
+  type: conference
+  selected: true
+  thumbnail: stepwise.jpg
+  links:
+    paper: https://arxiv.org/abs/2605.19228
+    code: https://github.com/Xiao0o0o/stepwise-confidence-attribution
+    blog: /blogs/stepwise-confidence-attribution/
+
+- title: "The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective"
+  authors: "Xiaoou Liu*, T. Chen*, W. Li, X. Hu, H. Wei"
+  venue: "KDD 2026 Blue Sky"
+  venue_full: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Blue Sky Track"
+  year: 2026
+  type: conference
+  selected: true
+  thumbnail: sim2real.jpg
+  links:
+    paper: https://arxiv.org/abs/2606.07017
+    blog: /blogs/sim-to-real-foundation-model-agents/
+
+- title: "Position: Uncertainty Quantification in LLMs is Just Unsupervised Clustering"
+  authors: "T. Chen, L. Da, Xiaoou Liu, H. Wei"
+  venue: "ICML 2026 Position"
+  venue_full: "International Conference on Machine Learning, Position Paper Track"
+  year: 2026
+  type: conference
+  thumbnail: uq-clustering.jpg
+  links:
+    paper: https://arxiv.org/abs/2605.19220
+
+- title: "Uncertainty Quantification of Large Language Models through Multi-Dimensional Responses"
+  authors: "T. Chen, Xiaoou Liu, L. Da, J. Chen, V. Papalexakis, H. Wei"
+  venue: "ACL 2026 Findings"
+  venue_full: "Findings of the Annual Meeting of the Association for Computational Linguistics"
+  year: 2026
+  type: conference
+  thumbnail: multidim.jpg
+  links:
+    paper: https://arxiv.org/abs/2502.16820
+
+- title: "SELAUR: Self Evolving LLM Agent via Uncertainty-aware Rewards"
+  authors: "D. Zhang, Xiaoou Liu, L. Cheng, Y. Wang, K. Murray, H. Wei"
+  venue: "PAKDD 2026"
+  venue_full: "Pacific-Asia Conference on Knowledge Discovery and Data Mining"
+  year: 2026
+  type: conference
+  note: "Oral"
+  thumbnail: selaur.jpg
+  links:
+    paper: https://arxiv.org/abs/2602.21158
+
+- title: "Conformal Feedback Alignment: Quantifying Answer-Level Reliability for Robust LLM Alignment"
+  authors: "T. Chen, Xiaoou Liu, V. Nandam, K. Liou, H. Wei"
+  venue: "EACL 2026 Findings"
+  venue_full: "Findings of the Conference of the European Chapter of the ACL"
+  year: 2026
+  type: conference
+  thumbnail: conformal-feedback.jpg
+  links:
+    paper: https://arxiv.org/abs/2601.17329
+
+- title: "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey"
+  authors: "Xiaoou Liu*, T. Chen*, L. Da, C. Chen, Z. Lin, H. Wei"
+  venue: "KDD 2025"
+  venue_full: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+  year: 2025
+  type: conference
+  selected: true
+  thumbnail: survey.jpg
+  links:
+    paper: https://arxiv.org/abs/2503.15850
+    code: https://github.com/Xiao0o0o/Awesome-UQ-in-LLMs
+    blog: /blogs/llm-uncertainty-quantification-survey/
+    project: /2025KDD_tutorial/
+
+- title: "Is Your Explanation Reliable: Confidence-Aware Explanation on Graph Neural Networks"
+  authors: "J. Zhang*, Xiaoou Liu*, D. Luo, H. Wei"
+  venue: "KDD 2025"
+  venue_full: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+  year: 2025
+  type: conference
+  thumbnail: gnn-explain.jpg
+  links:
+    paper: https://arxiv.org/abs/2506.00437
+
+- title: "Understanding the Uncertainty of LLM Explanations: A Perspective Based on Reasoning Topology"
+  authors: "L. Da, Xiaoou Liu, J. Dai, L. Cheng, Y. Wang, H. Wei"
+  venue: "COLM 2025"
+  venue_full: "Conference on Language Modeling"
+  year: 2025
+  type: conference
+  thumbnail: reasoning-topology.jpg
+  links:
+    paper: https://arxiv.org/abs/2502.17026
+
+- title: "Uncertainty Quantification for Physics-Informed Traffic Graph Networks"
+  authors: "T. Bao, Xiaoou Liu, M. Ma, T. Johnson, H. Wei"
+  venue: "ICCPS 2025"
+  venue_full: "ACM/IEEE International Conference on Cyber-Physical Systems"
+  year: 2025
+  type: conference
+  award: "Best Artifact Award"
+  thumbnail:
+  links:
+    paper: https://doi.org/10.1145/3716550.3722023
+
+- title: "Reproducible and Low-cost Sim-to-Real Environment for Traffic Signal Control"
+  authors: "Y. Zhang, K. Vo, L. Da, T. Chen, Xiaoou Liu, H. Wei"
+  venue: "ICCPS 2025"
+  venue_full: "ACM/IEEE International Conference on Cyber-Physical Systems"
+  year: 2025
+  type: conference
+  thumbnail:
+  links:
+    paper: https://doi.org/10.1145/3716550.3725161
+
+- title: "MCQA-Eval: Efficient Confidence Evaluation in NLG with Gold-Standard Correctness Labels"
+  authors: "Xiaoou Liu, Z. Lin, L. Da, C. Chen, S. Trivedi, H. Wei"
+  venue: "arXiv 2025"
+  venue_full: "arXiv preprint arXiv:2502.14268"
+  year: 2025
+  type: preprint
+  thumbnail: mcqa-eval.jpg
+  links:
+    paper: https://arxiv.org/abs/2502.14268
+
+- title: "The Effectiveness of GNNs for Node Classification: The Significance of Side Information"
+  authors: "Xiaoou Liu"
+  venue: "M.Sc. Thesis"
+  venue_full: "Master's thesis, University of British Columbia"
+  year: 2024
+  type: thesis
+  thumbnail:
+  links: {}
